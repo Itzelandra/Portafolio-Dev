@@ -1,0 +1,70 @@
+:root {
+    --apple-black: #1d1d1f;
+    --apple-white: #fbfbfd;
+    --apple-purple: #8629ff;
+    --apple-purple-dark: #6a1bcc;
+}
+/* Navbar */
+.navbar-apple {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+
+.text-purple { color: var(--apple-purple); }
+.text-gradient {
+    background: linear-gradient(90deg, #1d1d1f, var(--apple-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Botones */
+.btn-purple {
+    background-color: var(--apple-purple);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-weight: 600;
+}
+.btn-purple:hover {
+    background-color: var(--apple-purple-dark);
+    transform: translateY(-2px);
+    color: white;
+}
+/* Estilos para el cuerpo del artículo */
+.article-content {
+    line-height: 1.8;
+    color: #3a3a3c;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+}
+
+.article-content h2 {
+    color: var(--apple-black);
+    letter-spacing: -0.02em;
+}
+
+.apple-quote {
+    font-style: italic;
+    color: var(--apple-black);
+    font-size: 1.2rem;
+    border-left-color: var(--apple-purple) !important;
+}
+
+/* Ajuste de imagen en post */
+.article-container img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+/* Espaciado para listas */
+.article-content ul {
+    padding-left: 1.2rem;
+}
+
+.article-content li::marker {
+    color: var(--apple-purple);
+}

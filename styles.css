@@ -1,0 +1,142 @@
+:root {
+    --apple-black: #1d1d1f;
+    --apple-white: #fbfbfd;
+    --apple-purple: #8629ff;
+    --apple-purple-dark: #6a1bcc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--apple-white);
+    color: var(--apple-black);
+}
+
+/* Navbar */
+.navbar-apple {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.text-purple { color: var(--apple-purple); }
+.text-gradient {
+    background: linear-gradient(90deg, #1d1d1f, var(--apple-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Secciones */
+.hero-section { padding: 100px 0; min-height: 80vh; display: flex; align-items: center; }
+.section-padding { padding: 80px 0; }
+
+.skill-tag {
+    padding: 10px 22px;
+    background: #f5f5f7;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Tarjeta Proyecto */
+.project-card { background: #000; }
+.carousel-item img { height: 450px; object-fit: cover; }
+
+/* Contact Banner */
+.contact-banner {
+    background: linear-gradient(135deg, #1d1d1f 0%, #3a007d 100%);
+}
+
+.apple-input-dark {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white !important;
+    border-radius: 12px;
+    padding: 12px;
+}
+.apple-input-dark::placeholder { color: rgba(255,255,255,0.6); }
+.apple-input-dark:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--apple-purple);
+    box-shadow: none;
+}
+
+/* Botones */
+.btn-purple {
+    background-color: var(--apple-purple);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-weight: 600;
+}
+.btn-purple:hover {
+    background-color: var(--apple-purple-dark);
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* Animación */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.9s cubic-bezier(0.2, 1, 0.3, 1);
+}
+.reveal.active { opacity: 1; transform: translateY(0); }
+
+#carouselProject1 img{
+    width: 100%;
+    height: auto;      /* 👈 la clave */
+    object-fit: contain;
+    display: block;
+}
+
+
+
+#carouselProject1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 👈 evita que se corten */
+    background-color: #000; /* opcional para rellenar espacios */
+}
+
+.contenedor-video {
+  width: 100%;       /* O el ancho que desees, ej. 800px */
+  max-width: 100%;   /* Evita que sea más grande que la pantalla */
+}
+
+.video-fluido {
+  width: 100%;       /* Se estira al 100% de su contenedor */
+  height: auto;      /* Mantiene la proporción original (aspect ratio) */
+  display: block;
+}
+
+#carouselProject2 img{
+    width: 100%;
+    height: auto;      /* 👈 la clave */
+    object-fit: contain;
+    display: block;
+}
+
+
+/* La magia ocurre aquí */
+#carouselProject2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 👈 evita que se corten */
+    background-color: #000; /* opcional para rellenar espacios */
+}
+
+#carouselProject3 img{
+    width: 100%;
+    height: auto;      /* 👈 la clave */
+    object-fit: contain;
+    display: block;
+}
+
+
+/* La magia ocurre aquí */
+#carouselProject3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 👈 evita que se corten */
+    background-color: #000; /* opcional para rellenar espacios */
+}
