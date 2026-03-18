@@ -84,7 +84,7 @@ body {
 
 #carouselProject1 img{
     width: 100%;
-    height: auto;      /* 👈 la clave */
+    height: auto;     
     object-fit: contain;
     display: block;
 }
@@ -94,40 +94,39 @@ body {
 #carouselProject1 img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 👈 evita que se corten */
-    background-color: #000; /* opcional para rellenar espacios */
+    object-fit: contain; 
+    background-color: #000; 
 }
 
 .contenedor-video {
-  width: 100%;       /* O el ancho que desees, ej. 800px */
-  max-width: 100%;   /* Evita que sea más grande que la pantalla */
+  width: 100%;      
+  max-width: 100%;   
 }
 
 .video-fluido {
-  width: 100%;       /* Se estira al 100% de su contenedor */
-  height: auto;      /* Mantiene la proporción original (aspect ratio) */
+  width: 100%;       
+  height: auto;     
   display: block;
 }
 
 #carouselProject2 img{
     width: 100%;
-    height: auto;      /* 👈 la clave */
+    height: auto;      
     object-fit: contain;
     display: block;
 }
 
 
-/* La magia ocurre aquí */
 #carouselProject2 img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 👈 evita que se corten */
-    background-color: #000; /* opcional para rellenar espacios */
+    object-fit: contain; 
+    background-color: #000; 
 }
 
 #carouselProject3 img{
     width: 100%;
-    height: auto;      /* 👈 la clave */
+    height: auto;      
     object-fit: contain;
     display: block;
 }
@@ -137,6 +136,6 @@ body {
 #carouselProject3 img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 👈 evita que se corten */
-    background-color: #000; /* opcional para rellenar espacios */
+    object-fit: contain; 
+    background-color: #000; 
 }
